@@ -5,4 +5,5 @@ def get_data(source) -> list:
 
 def get_data_string(source) -> list:
     data = [val for val in open(source, "r").readlines()]
+    data = [val.strip() for val in data]
     return data

@@ -28,7 +28,7 @@ class Solution:
                 if occurrences >= self.min:
                     return True
 
-    def is_valid_part2(self):
+    def is_valid_part2(self) -> bool:
         if self.string[self.min-1] == self.char and self.string[self.max-1] == self.char:
             return False
         elif self.string[self.min-1] == self.char or self.string[self.max-1] == self.char:
